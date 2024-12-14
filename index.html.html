@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Document</title>
+  
+   <link rel="stylesheet" href="rps.css"/>
+</head>
+<body>
+
+    <h2>Rock Paper Scissor</h2>
+    <button  class="move-button" 
+    onclick="playGame('rock'); ">
+<img src="https://res.cloudinary.com/dko49jfq3/image/upload/v1734176809/rock-emoji_ktfa0t.png" class="move-icon">
+    </button >
+    
+    <button
+     class="move-button"
+    onclick="playGame('paper');">
+<img src="https://res.cloudinary.com/dko49jfq3/image/upload/v1734176805/paper-emoji_1_t9ceee.png"  class="move-icon">
+    </button>
+
+    <button
+     class="move-button"
+    
+    onclick="playGame('scissor');">
+<img src="https://res.cloudinary.com/dko49jfq3/image/upload/v1734180922/scissor-emoji_n7h1ie.png"  class="move-icon">
+    </button>
+
+<br>
+<p class="js-result result" ></p>
+
+<p class="js-moves">
+    
+    <!-- You
+     <img src="https://res.cloudinary.com/dko49jfq3/image/upload/v1734176809/rock-emoji_ktfa0t.png"
+      class="move-icon"
+     >
+   
+     <img src="https://res.cloudinary.com/dko49jfq3/image/upload/v1734176809/rock-emoji_ktfa0t.png"
+       class="move-icon"
+     
+     >
+Computer -->
+
+</p>
+
+<p class="score cscore">
+
+
+
+</p>
+
+
+    <button onclick="
+     score.loss=0;
+     score.wins=0;
+     score.ties=0;
+     localStorage.removeItem('score');
+     console.log(score);
+
+     updateScore();"
+     class="reset-score-button"
+    ">
+      Reset Score
+    </button>
+
+
+<script src="rps.js"></script>
+   
+</body>
+</html>
